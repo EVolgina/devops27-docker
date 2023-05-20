@@ -15,11 +15,11 @@ Hey, Netology
 
 Опубликуйте созданный fork в своём репозитории и предоставьте ответ в виде ссылки на https://hub.docker.com/username_repo.
 ##### Ответ:
-1.Скачиваем образ nginx
-2.Создаем dockerfile (сценарий)
-3.Делаем fork образа
-4.Пушим образ в репозиторий на hub.docker.com
-5.Запускаем контейнер с пробросом на 8080 порт хоста
+1.Скачиваем образ nginx \
+2.Создаем dockerfile (сценарий) \
+3.Делаем fork образа \
+4.Пушим образ в репозиторий на hub.docker.com \
+5.Запускаем контейнер с пробросом на 8080 порт хоста \
 
 ``` devops@WORKBOOK:/mnt/c/Users/Admin/docker$ docker pull nginx
 devops@WORKBOOK:/mnt/c/Users/Admin/docker$ sudo nano dockerfile
