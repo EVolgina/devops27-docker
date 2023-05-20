@@ -90,7 +90,7 @@ $ docker exec centos-container /bin/bash -c "echo test_message>/data/readme.md" 
 - Добавляем еще один файл в папку /data на хостовой машине: \
 devops@WORKBOOK:/mnt/c/Users/Admin$ sudo touch /data/test.txt \
 devops@WORKBOOK:/mnt/c/Users/Admin$ sudo nano /data/test.txt \
-- Подключаемся во второй контейнер и отображаем листинг и содержание файлов в /data контейнера.\
+- Подключаемся во второй контейнер и отображаем листинг и содержание файлов в /data контейнера.
 
 ``` devops@WORKBOOK:/mnt/c/Users/Admin$ sudo docker exec -it debian-container /bin/bash
 root@34770526b03f:/# cd /data
