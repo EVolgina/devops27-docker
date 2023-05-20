@@ -1,21 +1,29 @@
-# Задача 1
-Сценарий выполнения задачи:
-
+# Задача 1 Сценарий выполнения задачи:
 создайте свой репозиторий на https://hub.docker.com;
 выберите любой образ, который содержит веб-сервер Nginx;
 создайте свой fork образа;
 реализуйте функциональность: запуск веб-сервера в фоне с индекс-страницей, содержащей HTML-код ниже:
-<html>
+'''<html>
 <head>
 Hey, Netology
 </head>
 <body>
 <h1>I’m DevOps Engineer!</h1>
 </body>
-</html>
+</html>'''
 Опубликуйте созданный fork в своём репозитории и предоставьте ответ в виде ссылки на https://hub.docker.com/username_repo.
+Ответ:
+'''
+devops@WORKBOOK:/mnt/c/Users/Admin/docker$ sudo nano dockerfile
+devodevops@WORKBOOK:/mnt/c/Users/Admin/docker$ sudo docker build -f dockerfile -t evolgina/devops27:tagname .
+devodevops@WORKBOOK:/mnt/c/Users/Admin/docker$ sudo docker push evolgina/devops27:tagname
+docker login --username evolgina
+devops@WORKBOOK:/mnt/c/Users/Admin/docker$ sudo docker run -d -p 8080:80 evolgina/devops27:tagname
+'''
+![hello]()
+### ссылка https://hub.docker.com/repository/docker/evolgina/devops27/tags?page=1&ordering=last_updated
 
-Задача 2
+# Задача 2
 Посмотрите на сценарий ниже и ответьте на вопрос: «Подходит ли в этом сценарии использование Docker-контейнеров или лучше подойдёт виртуальная машина, физическая машина? Может быть, возможны разные варианты?»
 
 Детально опишите и обоснуйте свой выбор.
